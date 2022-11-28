@@ -1,7 +1,7 @@
 name: vibration_type
-description: A new Flutter project.
-version: 0.0.1
-homepage:
+description: Vibration type IOS
+version: 0.0.2
+homepage: https://github.com/andrelucassvt/vibration-type-plugin
 
 environment:
   sdk: '>=2.18.4 <3.0.0'

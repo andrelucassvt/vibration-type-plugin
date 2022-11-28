@@ -1,15 +1,38 @@
-# vibration_type
+This plugin allows Flutter apps for IOS to access the types of vibrations available in the operating system.
 
-A new Flutter project.
+## Platform Support
 
-## Getting Started
+| Android | iOS | MacOS | Web | Linux | Windows |
+| :-----: | :-: | :---: | :-: | :---: | :-----: |
+|   x    | ✔️  |  x   | x  |  x   |   x   |
 
-This project is a starting point for a Flutter
-[plug-in package](https://flutter.dev/developing-packages/),
-a specialized package that includes platform-specific implementation code for
-Android and/or iOS.
+## Required:
+add to Podfile
+```switf
+platform :ios, '13.0'
+```
 
-For help getting started with Flutter development, view the
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+## How to use:
+
+```dart
+import 'package:vibration_type/vibration_type.dart';
+```
+## Impact vibration:
+
+```dart
+enum ImpactVibrationType { soft, light, medium, heavy, rigid }
+
+
+VibrationType().impactVibration(ImpactVibrationType.heavy);
+```
+
+## Notification vibration:
+
+```dart
+enum NotificationVibrationType { success, error, warning }
+
+VibrationType().notificationVibration(NotificationVibrationType.warning);
+```
+
 
